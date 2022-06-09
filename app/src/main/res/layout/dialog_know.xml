@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_1000"
+    android:layout_height="@dimen/h_300"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="#4E4B4B"
+        android:text="串口打开成功，请重新插入魔力中继，如插入后5秒未配置成功，请重新拔插魔力中继！"
+        android:paddingStart="@dimen/w_20"
+        android:paddingEnd="@dimen/w_20"
+        android:textSize="@dimen/h_35" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_1"
+        android:background="#454444" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2">
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_click_effect"
+            android:gravity="center"
+            android:text="知道了"
+            android:textColor="#373434"
+            android:textSize="@dimen/h_40" />
+
+    </LinearLayout>
+
+</LinearLayout>

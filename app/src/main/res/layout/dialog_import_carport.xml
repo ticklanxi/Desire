@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="600dp"
+    android:layout_height="450dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_use_qr_blue">
+
+        <TextView
+            android:id="@+id/tv_fileImport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="文件导入"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h_35" />
+
+        <ImageView
+            android:id="@+id/imgDismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/h_40"
+            android:src="@mipmap/ic_useqr_close" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_fileList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:overScrollMode="never" />
+
+</LinearLayout>

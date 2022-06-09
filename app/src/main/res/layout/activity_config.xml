@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/icon_background"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="30dp"
+            android:layout_height="80dp">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_text"
+                android:layout_marginLeft="@dimen/w_230"
+                android:id="@+id/edit1"
+                android:text=""
+                android:textColor="#6F6F6F"
+                android:textSize="@dimen/h_33"
+                android:gravity="center"
+                android:maxLines="1"
+                android:lines="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tip1"
+                android:layout_centerVertical="true"
+                android:text="上级通讯IP："
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/h_36"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/edit1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_text"
+                android:layout_marginLeft="@dimen/w_230"
+                android:id="@+id/edit2"
+                android:text=""
+                android:textColor="#6F6F6F"
+                android:textSize="@dimen/h_33"
+                android:gravity="center"
+                android:maxLines="1"
+                android:lines="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tip2"
+                android:layout_centerVertical="true"
+                android:text="端口号："
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/h_36"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/edit2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <RadioGroup
+                android:id="@+id/secOptionsContainer"
+                android:layout_width="@dimen/w_500"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/h_32"
+                android:layout_marginBottom="@dimen/h_12"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/w_230"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+                <RadioButton
+                    android:id="@+id/rbSec0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/section_radio_style"
+                    android:gravity="center"
+                    android:text="0段"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/rbSec1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/section_radio_style"
+                    android:gravity="center"
+                    android:text="1段"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/rbSec2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/section_radio_style"
+                    android:gravity="center"
+                    android:text="2段"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/rbSec3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/section_radio_style"
+                    android:gravity="center"
+                    android:text="3段"
+                    android:textColor="@color/white" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tip3"
+                android:layout_centerVertical="true"
+                android:text="分段号："
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/h_36"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/secOptionsContainer" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/w_30"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_setting"
+                android:layout_width="@dimen/w_320"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_yellow10"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/w_15"
+                android:text="系统设置"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h_50" />
+
+            <TextView
+                android:id="@+id/tv_upan"
+                android:layout_width="@dimen/w_320"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_yellow10"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/w_15"
+                android:layout_marginLeft="@dimen/w_100"
+                android:text="U盘导入"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h_50" />
+
+            <TextView
+                android:id="@+id/tv_fileManger"
+                android:layout_width="@dimen/w_320"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_yellow10"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/w_15"
+                android:layout_marginLeft="@dimen/w_100"
+                android:text="文件管理"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h_50" />
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="@dimen/w_320"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_yellow10"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/w_15"
+                android:layout_marginLeft="@dimen/w_100"
+                android:text="保 存"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h_50" />
+
+
+        </LinearLayout>
+
+
+
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_keep"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+
+<!--            android:background="@drawable/bg_yellow10"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:padding="@dimen/w_15"-->
+<!--            android:text="保 存"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/h_60"-->
+<!--            android:layout_gravity="bottom|center_horizontal"-->
+<!--           />-->
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
